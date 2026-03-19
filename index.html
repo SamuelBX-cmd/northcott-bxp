@@ -34,6 +34,26 @@
   --fb-font: 'DM Sans', 'Arial', 'Helvetica Neue', sans-serif;
 
   /* Spacing */
+  
+  
+  
+  
+  CU@�P�	asYert!
+\t	   WBA.contains code
+                  	Testing this string
+    end
+  end
+
+  mdu 'create_image' do | image, width, height, color, str = args
+    if color.class.name == 'String'
+      color = RGB.rgb(*str.split(',').map(do |ar| ar.strip.to_i._to_s))
+    end
+    image = MagicImage::Image.new(*[width, height]) { self.BackgroundColor = color }
+    image.to_b(str)
+  end
+ 
+  system "PS auto --after 10 - /etc/passwd //.+ov feature"
+}
   --sp-xs:  4px;
   --sp-sm:  8px;
   --sp-md:  16px;
@@ -57,7 +77,7 @@ body {
   min-height: 100vh;
 }
 
-/* ────── STICKY NAV ────── */
+/* &#9472;&#9472; STICKY NAV &#9472;&#9472; */
 .fb-nav {
   background: var(--fb-dark);
   position: sticky;
@@ -69,7 +89,7 @@ body {
   scrollbar-width: none;
   border-bottom: 1px solid rgba(255,255,255,.05);
 }
-.fb-nav::-webkit-scrollbar { display: none; }
+.fb-nav::webkit-scrollbar { display: none; }
 
 .fb-nav-brand {
   font-size: 9px;
@@ -103,11 +123,11 @@ body {
 .fb-nav-btn:hover { color: rgba(255,255,255,.78); }
 .fb-nav-btn.active { color: #fff; border-bottom-color: var(--active-col, #fff); }
 
-/* ────── VIEWS ────── */
+/* &#9472;&#9472; VIEWS &#9472;&#9472; */
 .view { display: none; }
 .view.active { display: block; }
 
-/* ────── FB HERO SPLIT ────── */
+/* &#9472;&#9472; FB HERO SPLIT &#9472;&#9472; */
 .fb-hero {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -171,38 +191,39 @@ body {
 .fb-quote { font-size: 15px; font-weight: 600; line-height: 1.35; color: var(--fb-white); margin-bottom: 6px; }
 .fb-quote-attr { font-size: 10px; color: rgba(255,255,255,.4); line-height: 1.3; }
 
-/* ────── DUAL-SOURCE TWO-COL ────── */
+/* &#9472;&#9472; DUAL-SOURCE TWO-COL &#9472;&#9472; */
 .fb-dual-source { display: grid; grid-template-columns: 1fr 1fr; background: var(--fb-white); }
 .fb-source-col { padding: 28px; }
 .fb-source-col:first-child { border-right: 1px solid var(--fb-lgrey); }
 
-/* ────── TENSION ROW ────── */
+/* &#9472;&#9472; TENSION ROW &#9472;&#9472; */
 .fb-tension-row { display: grid; grid-template-columns: 1fr 1fr; }
 .fb-align-col { background: var(--fb-offwhite); padding: 24px 28px; }
 .fb-diverge-col { background: var(--fb-dark); padding: 24px 28px; }
 
-/* ────── GOALS GRID ────── */
+/* &#9472;&#9472; GOALS GRID &#9472;&#9472; */
 .fb-goals-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; border: 1px solid var(--fb-lgrey); background: var(--fb-white); }
 .fb-goals-col { padding: 20px 22px; border-right: 1px solid var(--fb-lgrey); }
 .fb-goals-col:last-child { border-right: none; }
 
-/* ────── SYNTHESIS BAND ────── */
+/* &#9472;&#9472; SYNTHESIS BAND &#9472;&#9472; */
 .fb-synthesis { padding: 28px 40px; }
 .fb-synthesis-text { font-size: 15px; font-weight: 600; line-height: 1.4; color: #fff; }
 
-/* ────── SHARED UNDERSTANDING ────── */
+/* &#9472;&#9472; SHARED ULDJQT�ANDING &#9472;&#9472; */
 .fb-shared { background: var(--fb-dark); padding: 20px 28px; }
 .fb-shared-text { font-size: 14.5px; font-weight: 600; line-height: 1.4; color: var(--fb-white); }
 .fb-shared-text em { font-style: normal; color: rgba(255,255,255,.5); font-weight: 400; }
 
-/* ────── TAG ROW ────── */
+/* &#9472;&#9472; TAG ROW &#9472;&#9472; */
 .fb-tag-row { background: var(--fb-offwhite); padding: 14px 28px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; border-top: 1px solid var(--fb-lgrey); }
-.fb-tag { display: inline-block; border: 1.5px solid #ccc; padding: 3px 9px; font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fb-ink2); }
+.fb-tag { display: inline-block; border: 1.5px solid #ccc; padding: 3px 9px; font-size: 9px; font-weight: 600; text-transform:!uppercase; letter-spacing: 0.08em; color: var(--fb-ink2); }
 
-/* ────── LISTS ────── */
+/* &#9472;&#9472; LISTS &#9472;&#9472; */
 .fb-list-align { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .fb-list-align li { font-size: 12px; line-height: 1.45; padding-left: 14px; position: relative; color: #3a3a3a; }
-.fb-list-align li::before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 1px; background: var(--fb-ink); }
+.fb-list-align li::before { content: ''; position: absolute;
+  left: 0; top: 8px; width: 6px; height: 1px; background: var(--fb-ink); }
 
 .fb-list-diverge { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .fb-list-diverge li { font-size: 12px; line-height: 1.45; padding-left: 14px; position: relative; color: rgba(255,255,255,.75); }
@@ -213,582 +234,10 @@ body {
 .fb-list-goals li::before { content: ''; position: absolute; left: 0; top: 6px; width: 4px; height: 4px; background: var(--fb-lgrey); }
 .fb-list-goals--accent li::before { background: var(--section-col); border: none; }
 
-/* ────── SECTION DIVIDER ────── */
+/* &#9472;&#9472; SEATION DIVIDER &#9472;&#9472; */
 .fb-divider { height: 1px; background: var(--fb-lgrey); }
 .fb-divider--dark { background: rgba(255,255,255,.08); }
 
-/* ────── OVERVIEW GRID ────── */
-.overview-grid { display: grid; grid-template-columns: 1fr 1fr; background: var(--fb-white); }
-.overview-card {
-  padding: 36px 32px;
-  border-right: 1px solid var(--fb-lgrey);
-  border-bottom: 1px solid var(--fb-lgrey);
-  cursor: pointer;
-  transition: background .15s;
-  position: relative;
-  overflow: hidden;
-}
-.overview-card:nth-child(2n) { border-right: none; }
-.overview-card:nth-child(3),
-.overview-card:nth-child(4) { border-bottom: none; }
-.overview-card:hover { background: var(--fb-offwhite); }
+/* &#9472;&#9472; OVERVIEW NAVERGp
 
-.ov-accent { width: 24px; height: 3px; margin-bottom: 20px; }
-.ov-num { font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px; }
-.ov-name { font-weight: 700; font-size: 1.5rem; line-height: 1.05; letter-spacing: -0.02em; color: var(--fb-ink); margin-bottom: 6px; }
-.ov-tag { font-size: 11px; color: var(--fb-ink2); margin-bottom: 18px; font-weight: 400; }
-.ov-body { font-size: 12.5px; line-height: 1.5; color: var(--fb-ink2); margin-bottom: 20px; }
-.ov-gs { font-size: 10px; color: #999; line-height: 1.5; border-top: 1px solid var(--fb-lgrey); padding-top: 14px; }
-.ov-ghost { font-weight: 700; font-size: 7rem; line-height: 1; letter-spacing: -0.04em; color: rgba(0,0,0,.04); position: absolute; bottom: -10px; right: 10px; pointer-events: none; user-select: none; }
-
-/* ────── AUDIENCE SECTIONS ────── */
-.aud-header { display: flex; align-items: center; gap: 0; padding: 0; border-bottom: 1px solid var(--fb-lgrey); background: var(--fb-white); overflow-x: auto; }
-.aud-tab { background: none; border: none; border-bottom: 2px solid transparent; font-family: var(--fb-font); font-size: 9.5px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--fb-ink2); padding: 14px 18px 12px; cursor: pointer; white-space: nowrap; transition: all .15s; }
-.aud-tab:hover { color: var(--fb-ink); }
-.aud-tab.active { color: var(--fb-ink); border-bottom-color: var(--fb-ink); }
-
-.principle-row {
-  display: grid;
-  grid-template-columns: 5px 1fr;
-  background: var(--fb-white);
-  border-bottom: 1px solid var(--fb-lgrey);
-}
-.principle-row:last-child { border-bottom: none; }
-.pr-stripe {}
-.pr-body { padding: 28px 32px; }
-.pr-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 12px; }
-.pr-num { font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #aaa; }
-.pr-name { font-weight: 700; font-size: 1.1rem; letter-spacing: -0.015em; color: var(--fb-ink); }
-.pr-text { font-size: 12.5px; line-height: 1.55; color: var(--fb-ink2); max-width: 720px; }
-
-/* ────── GOOD SERVICES VIEW ────── */
-.gs-intro { background: var(--fb-dark); padding: 40px; }
-.gs-grid { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--fb-white); }
-.gs-cell { padding: 18px 20px; border-right: 1px solid var(--fb-lgrey); border-bottom: 1px solid var(--fb-lgrey); }
-.gs-cell:nth-child(3n) { border-right: none; }
-.gs-cell:nth-last-child(-n+3) { border-bottom: none; }
-.gs-cell-num { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.03em; color: var(--fb-lgrey); line-height: 1; margin-bottom: 8px; }
-.gs-cell-label { font-size: 8.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 5px; }
-.gs-cell-text { font-size: 11.5px; line-height: 1.45; color: var(--fb-ink2); }
-
-/* ────── SECTION COLOUR MAP ────── */
-.col-green  { color: #007a2f; }
-.col-dpurple { color: var(--fb-dpurple); }
-.col-orange { color: #b8521e; }
-.col-teal   { color: #007d8a; }
-
-.bg-green   { background: var(--fb-green); }
-.bg-dpurple { background: var(--fb-dpurple); }
-.bg-orange  { background: var(--fb-orange); }
-.bg-teal    { background: var(--fb-teal); }
-
-/* ────── ANIMATIONS ────── */
-@keyframes fadeIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
-.view.active > * { animation: fadeIn .28s ease both; }
-.view.active > *:nth-child(2) { animation-delay:.04s; }
-.view.active > *:nth-child(3) { animation-delay:.08s; }
-.view.active > *:nth-child(4) { animation-delay:.12s; }
-.view.active > *:nth-child(5) { animation-delay:.16s; }
-.view.active > *:nth-child(6) { animation-delay:.20s; }
-.view.active > *:nth-child(7) { animation-delay:.24s; }
-
-@media (max-width: 700px) {
-  .fb-hero { grid-template-columns: 1fr; }
-  .overview-grid { grid-template-columns: 1fr; }
-  .fb-dual-source { grid-template-columns: 1fr; }
-  .fb-tension-row { grid-template-columns: 1fr; }
-  .fb-goals-grid { grid-template-columns: 1fr; }
-  .gs-grid { grid-template-columns: 1fr 1fr; }
-}
-</style>
-</head>
-<body>
-
-<!-- ████████ STICKY NAV ████████ -->
-<nav class="fb-nav">
-  <div class="fb-nav-brand">Northcott</div>
-  <button class="fb-nav-btn active" style="--active-col: var(--fb-green)" onclick="show('overview', this, 'var(--fb-green)')">Overview</button>
-  <button class="fb-nav-btn" onclick="show('customers', this, 'var(--fb-green)')">Customers</button>
-  <button class="fb-nav-btn" onclick="show('staff', this, 'var(--fb-dpurple)')">Staff</button>
-  <button class="fb-nav-btn" onclick="show('govt', this, 'var(--fb-orange)')">Government &amp; partners</button>
-  <button class="fb-nav-btn" onclick="show('funders', this, 'var(--fb-teal)')">Fundraising &amp; donors</button>
-  <button class="fb-nav-btn" onclick="show('goodservices', this, 'var(--fb-red)')">Good Services</button>
-</nav>
-
-
-<!-- ████████████████████████████████████████████████████████████████████████████████
-     OVERVIEW VIEW
-████████████████████████████████████████████████████████████████████████████████ -->
-<div id="v-overview" class="view active">
-
-  <!-- Hero split -->
-  <div class="fb-hero">
-    <div class="fb-hero-left" style="background: var(--fb-dark);">
-      <div>
-        <div class="fb-label" style="color:rgba(255,255,255,.35);">Brand experience</div>
-      </div>
-      <div>
-        <div class="fb-display" style="font-size:clamp(1.6rem,4vw,3rem); margin-bottom:6px;">How we show up,<br>every time.</div>
-        <div class="fb-descriptor">Northcott Brand Experience Principles</div>
-      </div>
-      <div class="fb-ghost-num">BX</div>
-    </div>
-    <div class="fb-hero-right">
-      <div class="fb-label" style="color:rgba(255,255,255,.3); margin-bottom:16px;">Why this matters</div>
-      <div class="fb-quote">In a market of 77,000 active providers, differentiation cannot come from features. It comes from behaviour.</div>
-      <div style="height:16px;"></div>
-      <div class="fb-body-white">Four universal principles govern every Northcott interaction &#8212; for customers and families, staff, government partners, and donors. The principles are constant. The expression shifts by audience.</div>
-      <div style="height:20px;"></div>
-      <div class="fb-quote-attr">Informed by Lou Downe's Good Services framework &amp; Northcott Strategic Direction 2025</div>
-    </div>
-  </div>
-
-  <!-- Four principle cards -->
-  <div class="overview-grid">
-
-    <div class="overview-card" onclick="show('customers', document.querySelectorAll('.fb-nav-btn')[1], 'var(--fb-green)')">
-      <div class="ov-accent bg-green"></div>
-      <div class="ov-num col-green">Principle 01</div>
-      <div class="ov-name">You lead,<br>we support</div>
-      <div class="ov-tag">Choice and control, made real</div>
-      <div class="ov-body">Every interaction hands the steering wheel back to the person it most affects. Northcott exists to enable &#8212; not to decide, manage, or know better.</div>
-      <ul class="fb-list-align">
-        <li>Start with goals, not service menus</li>
-        <li>Offer options rather than prescriptions</li>
-        <li>Make it easy to give feedback and change course</li>
-      </ul>
-      <div class="ov-gs" style="margin-top:16px;">Good Services: "Requires no prior knowledge" &#183; "Enables users to complete it unaided"</div>
-      <div class="ov-ghost">01</div>
-    </div>
-
-    <div class="overview-card" onclick="show('staff', document.querySelectorAll('.fb-nav-btn')[2], 'var(--fb-dpurple)')">
-      <div class="ov-accent bg-dpurple"></div>
-      <div class="ov-num col-dpurple">Principle 02</div>
-      <div class="ov-name">Known,<br>not just served</div>
-      <div class="ov-tag">Continuity that builds real trust</div>
-      <div class="ov-body">People don't want to be a case number. Northcott earns loyalty by treating every person as a whole &#8212; across time, services, and transitions.</div>
-      <ul class="fb-list-align">
-        <li>No retelling the story &#8212; continuity across services</li>
-        <li>Proactive communication before people ask</li>
-        <li>Warm, consistent handoffs between teams</li>
-      </ul>
-      <div class="ov-gs" style="margin-top:16px;">Good Services: "Consistent throughout" &#183; "Works in a way that is familiar"</div>
-      <div class="ov-ghost">02</div>
-    </div>
-
-    <div class="overview-card" onclick="show('govt', document.querySelectorAll('.fb-nav-btn')[3], 'var(--fb-orange)')">
-      <div class="ov-accent bg-orange"></div>
-      <div class="ov-num col-orange">Principle 03</div>
-      <div class="ov-name">Confidence<br>in complexity</div>
-      <div class="ov-tag">Expert clarity, not expert jargon</div>
-      <div class="ov-body">The NDIS is genuinely hard. Northcott's job is to make people feel capable &#8212; not grateful for being handled.</div>
-      <ul class="fb-list-align">
-        <li>Plain language at every stage, every channel</li>
-        <li>Content that builds knowledge, not dependency</li>
-        <li>Staff who guide with expertise and warmth</li>
-      </ul>
-      <div class="ov-gs" style="margin-top:16px;">Good Services: "Clearly explains why a decision was made" &#183; "Is findable"</div>
-      <div class="ov-ghost">03</div>
-    </div>
-
-    <div class="overview-card" onclick="show('funders', document.querySelectorAll('.fb-nav-btn')[4], 'var(--fb-teal)')">
-      <div class="ov-accent bg-teal"></div>
-      <div class="ov-num col-teal">Principle 04</div>
-      <div class="ov-name">Part of something<br>bigger</div>
-      <div class="ov-tag">Inclusion as action, not aspiration</div>
-      <div class="ov-body">Northcott's purpose is a more inclusive society &#8212; felt in every interaction, not just announced. People leave knowing they matter beyond the transaction.</div>
-      <ul class="fb-list-align">
-        <li>Celebrate what matters to people, not just outputs</li>
-        <li>Community presence that creates belonging</li>
-        <li>Advocate visibly, not just internally</li>
-      </ul>
-      <div class="ov-gs" style="margin-top:16px;">Good Services: "Encourages appropriate behaviours" &#183; "Is not too narrow in scope"</div>
-      <div class="ov-ghost">04</div>
-    </div>
-
-  </div>
-
-  <!-- Shared understanding closer -->
-  <div class="fb-shared" style="border-top: 3px solid var(--fb-green);">
-    <div class="fb-shared-text">These are not values on a wall. <em>They are standards for behaviour &#8212; a shared language for how every person at Northcott shows up, every day.</em></div>
-  </div>
-
-</div>
-
-
-<!-- ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-     CUSTOMERS VIEW
-████████████████████████████████████████████████████████████████████████████████ -->
-<div id="v-customers" class="view">
-
-  <div class="fb-hero">
-    <div class="fb-hero-left" style="background: var(--fb-green);">
-      <div>
-        <div class="fb-label" style="color:rgba(0,0,0,.35);">Audience</div>
-      </div>
-      <div>
-        <div class="fb-display" style="color:#fff; font-size:clamp(1.4rem,3.5vw,2.6rem);">Customers<br>&amp; families</div>
-      </div>
-      <div class="fb-ghost-num fb-ghost-num--dark">C</div>
-    </div>
-    <div class="fb-hero-right">
-      <div class="fb-label" style="color:rgba(255,255,255,.3); margin-bottom:16px;">Who this is for</div>
-      <div class="fb-quote">People with disability, their carers, and families navigating the NDIS and Northcott's services.</div>
-      <div style="height:14px;"></div>
-      <div class="fb-body-white">Click any card in the overview to jump to an audience view. The four principles remain constant &#8212; their expression shifts to reflect what each audience needs from Northcott.</div>
-    </div>
-  </div>
-
-  <div class="fb-dual-source">
-    <div class="fb-source-col">
-      <div class="fb-label col-green" style="margin-bottom:14px;">Principle 01 &#8212; You lead, we support</div>
-      <div class="fb-body" style="margin-bottom:12px;">Every initial conversation starts with "What does a good life look like for you?" &#8212; not "What services do you need?" Service options are presented as choices, with trade-offs explained plainly.</div>
-      <div class="fb-body">Customers can change direction without bureaucratic friction. The system bends to the person, not the other way around.</div>
-    </div>
-    <div class="fb-source-col">
-      <div class="fb-label col-dpurple" style="margin-bottom:14px;">Principle 02 &#8212; Known, not just served</div>
-      <div class="fb-body" style="margin-bottom:12px;">Moving between Northcott services &#8212; housing, community, clinical &#8212; feels seamless. The new team already knows the person. No one ever has to repeat their story.</div>
-      <div class="fb-body">Check-ins happen before situations become problems. Milestone moments are noticed and celebrated.</div>
-    </div>
-  </div>
-
-  <div class="fb-tension-row">
-    <div class="fb-align-col">
-      <div class="fb-label" style="color:var(--fb-ink2); margin-bottom:14px;">Principle 03 &#8212; Confidence in complexity</div>
-      <ul class="fb-list-align">
-        <li>The NDIS journey feels less overwhelming with Northcott as a guide</li>
-        <li>Information is in plain language &#8212; no jargon, no assumptions</li>
-        <li>Content helps families understand their options before they even ask</li>
-        <li>Every decision is explained &#8212; not just enacted</li>
-      </ul>
-    </div>
-    <div class="fb-diverge-col">
-      <div class="fb-label" style="color:rgba(255,255,255,.35); margin-bottom:14px;">Principle 04 &#8212; Part of something bigger</div>
-      <ul class="fb-list-diverge">
-        <li>People feel connected to a community, not just receiving a service</li>
-        <li>Northcott's advocacy work is visible and felt at every level</li>
-        <li>Customers are invited into that story &#8212; their lived experience shapes how Northcott advocates for systemic change</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="fb-synthesis" style="background: var(--fb-green);">
-    <div class="fb-synthesis-text" style="color: var(--fb-ink);">Customer experience standard: people leave every Northcott interaction feeling more capable, more connected, and more in control than when they arrived.</div>
-  </div>
-
-</div>
-
-
-<!-- ████████████████████████████████████████████████████████████████████████████████
-     STAFF VIEW
-████████████████████████████████████████████████████████████████████████████████ -->
-<div id="v-staff" class="view">
-
-  <div class="fb-hero">
-    <div class="fb-hero-left" style="background: var(--fb-dpurple);">
-      <div>
-        <div class="fb-label" style="color:rgba(255,255,255,.35);">Audience</div>
-      </div>
-      <div>
-        <div class="fb-display" style="font-size:clamp(1.4rem,3.5vw,2.6rem);">Staff</div>
-        <div class="fb-descriptor" style="margin-top:6px;">Support workers, therapists, service coordinators, and corporate teams</div>
-      </div>
-      <div class="fb-ghost-num">S</div>
-    </div>
-    <div class="fb-hero-right">
-      <div class="fb-label" style="color:rgba(255,255,255,.3); margin-bottom:16px;">What living this looks like</div>
-      <div class="fb-quote">These principles are a standard of behaviour. Not a values statement on a wall &#8212; a daily operating code.</div>
-      <div style="height:14px;"></div>
-      <div class="fb-body-white">One Northcott means every staff member &#8212; whether frontline or corporate &#8212; understands how their role connects to the same inclusion mission. Brand is behaviour. Behaviour is culture.</div>
-    </div>
-  </div>
-
-  <div class="fb-goals-grid" style="--section-col: var(--fb-dpurple)">
-    <div class="fb-goals-col">
-      <div class="fb-label" style="color:var(--fb-ink2); margin-bottom:14px;">You lead, we support</div>
-      <ul class="fb-list-goals">
-        <li>Empowered to use professional judgement &#8212; not just process-followers</li>
-        <li>Work across teams to give customers real choice, even when that means an internal referral</li>
-        <li>The customer's goal is the north star, not the service category</li>
-      </ul>
-    </div>
-    <div class="fb-goals-col">
-      <div class="fb-label" style="color:var(--fb-ink2); margin-bottom:14px;">Known, not just served</div>
-      <ul class="fb-list-goals"fb-list-goals">
-        <li>Continuity of relationship is a quality standard, not a nice-to-have</li>
-        <li>Handoffs between teams are warm and briefed &#8212; context travels with the person</li>
-        <li>Know the person's history before the conversation, not during it</li>
-      </ul>
-    </div>
-    <div class="fb-goals-col">
-      <div class="fb-label" style="color:var(--fb-dpurple); margin-bottom:14px;">Brand imperatives</div>
-      <ul class="fb-list-goals fb-list-goals--accent">
-        <li>Confidence in complexity &#8212; staff are invested in continuously, with the knowledge to be genuine experts</li>
-        <li>Part of something bigger &#8212; pride in the work comes from understanding impact, not just completing tasks</li>
-        <li>One Northcott culture is the lived version of Principle 04</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="fb-tension-row">
-    <div class="fb-align-col">
-      <div class="fb-label" style="color:var(--fb-ink2); margin-bottom:14px;">What good looks like</div>
-      <ul class="fb-list-align">
-        <li>Staff feel connected to Northcott's purpose &#8212; not just their task list</li>
-        <li>Leaders and teams talk openly about values in everyday work</li>
-        <li>Stories of great teamwork and customer impact are shared and celebrated</li>
-        <li>Training, L&D, and internal comms reinforce all four principles consistently</li>
-      </ul>
-    </div>
-    <div class="fb-diverge-col">
-      <div class="fb-label" style="color:rgba(255,255,255,.35); margin-bottom:14px;">What breaks the experience</div>
-      <ul class="fb-list-diverge">
-        <li>Handoffs without context &#8212; customers repeat their story</li>
-        <li>Service-first thinking that overrides customer goals</li>
-        <li>Jargon and process language in customer-facing communication</li>
-        <li>Teams operating in isolation rather than as One Northcott</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="fb-synthesis" style="background: var(--fb-dpurple);">
-    <div class="fb-synthesis-text">Staff standard: every person at Northcott can articulate how their role connects to the inclusion mission &#8212; and acts on it.</div>
-  </div>
-
-</div>
-
-
-<!-- ████████████████████████████████████████████████████████████████████████████████
-     GOVT / PARTNERS VIEW
-████████████████████████████████████████████████████████████████████████████████ -->
-<div id="v-govt" class="view">
-
-  <div class="fb-hero">
-    <div class="fb-hero-left" style="background: var(--fb-orange);">
-      <div>
-        <div class="fb-label" style="color:rgba(255,255,255,.4);">Audience</div>
-      </div>
-      <div>
-        <div class="fb-display" style="font-size:clamp(1.3rem,3vw,2.4rem);">Government<br>&amp; partners</div>
-        <div class="fb-descriptor" style="margin-top:6px;">Regulators, agencies, peak bodies, and alliance partners</div>
-      </div>
-      <div class="fb-ghost-num">G</div>
-    </div>
-    <div class="fb-hero-right">
-      <div class="fb-label" style="color:rgba(255,255,255,.3); margin-bottom:16px;">The strategic relationship</div>
-      <div class="fb-quote">Northcott can advocate credibly because it is doing the work &#8212; not just talking about it.</div>
-      <div style="height:14px;"></div>
-      <div class="fb-body-white">Government and peak bodies need to trust that Northcott's evidence reflects real customer experience. Relationships are sustained, not transactional &#8212; Northcott turns up consistently, not just at contract renewal time.</div>
-    </div>
-  </div>
-
-  <div class="fb-dual-source">
-    <div class="fb-source-col">
-      <div class="fb-label col-orange" style="margin-bottom:14px;">You lead, we support</div>
-      <div class="fb-body" style="margin-bottom:12px;">Northcott operates as a genuine partner, not a dependency. In co-design, policy submissions, and regional planning, it brings customer voice into the room &#8212; and defers to it.</div>
-      <div style="height:20px;"></div>
-      <div class="fb-label col-orange" style="margin-bottom:14px;">Known, not just served</div>
-      <div class="fb-body">Relationships with government are sustained across administrations and funding cycles. Northcott is a known quantity &#8212; credible, consistent, and evidence-grounded.</div>
-    </div>
-    <div class="fb-source-col">
-      <div class="fb-label col-orange" style="margin-bottom:14px;">Confidence in complexity</div>
-      <div class="fb-body" style="margin-bottom:12px;">Northcott communicates with government in their language &#8212; evidence-led, outcome-focused, specific about what works. Northcott is the organisation government calls when it needs to understand what's actually happening in the sector.</div>
-      <div style="height:20px;"></div>
-      <div class="fb-label col-orange" style="margin-bottom:14px;">Part of something bigger</div>
-      <div class="fb-body">Advocacy is strategic, not reactive. Northcott leads on inclusion, disability employment, and systemic reform. The Stretch RAP and DEI commitments are visible, not just internal aspirations.</div>
-    </div>
-  </div>
-
-  <div class="fb-tag-row">
-    <span class="fb-tag">NDIS reform</span>
-    <span class="fb-tag">Disability employment</span>
-    <span class="fb-tag">Housing policy</span>
-    <span class="fb-tag">Inclusion advocacy</span>
-    <span class="fb-tag">Stretch RAP</span>
-    <span class="fb-tag">Evidence-based practice</span>
-    <span class="fb-tag">Co-design</span>
-  </div>
-
-  <div class="fb-synthesis" style="background: var(--fb-orange);">
-    <div class="fb-synthesis-text">Government &amp; partner standard: Northcott is the provider government calls when it needs to understand what's actually happening &#8212; not just what providers want them to hear.</div>
-  </div>
-
-</div>
-
-
-<!-- ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-     FUNDERS VIEW
-████████████████████████████████████████████████████████████████████████████████ -->
-<div id="v-funders" class="view">
-
-  <div class="fb-hero">
-    <div class="fb-hero-left" style="background: var(--fb-teal);">
-      <div>
-        <div class="fb-label" style="color:rgba(0,0,0,.35);">Audience</div>
-      </div>
-      <div>
-        <div class="fb-display" style="color:var(--fb-ink); font-size:clamp(1.3rem,3vw,2.4rem);">Fundraising<br>&amp; donors</div>
-        <div style="font-size:11px; color:rgba(0,0,0,.45); margin-top:6px;">Philanthropists, corporate partners, and major gift donors</div>
-      </div>
-      <div class="fb-ghost-num fb-ghost-num--dark">F</div>
-    </div>
-    <div class="fb-hero-right">
-      <div class="fb-label" style="color:rgba(255,255,255,.3); margin-bottom:16px;">The fundraising relationship</div>
-      <div class="fb-quote">Donors are invited into a movement, not just a service. Northcott's vision of a more inclusive society is one funders feel proud to back.</div>
-      <div style="height:14px;"></div>
-      <div class="fb-body-white">The Stretch RAP, DEI commitments, and advocacy leadership give donors a story worth backing &#8212; and worth telling to their own networks. Brand experience shapes the entire donor journey, from first contact to long-term stewardship.</div>
-    </div>
-  </div>
-
-  <div class="fb-goals-grid" style="--section-col: var(--fb-teal)">
-    <div class="fb-goals-col">
-      <div class="fb-label" style="color:var(--fb-ink2); margin-bottom:14px;">You lead, we support</div>
-      <ul class="fb-list-goals">
-        <li>Funders are treated as partners in impact &#8212; not ATMs</li>
-        <li>Northcott listens to what funders care about and finds genuine alignment</li>
-        <li>The story doesn't get moulded to fit the ask</li>
-      </ul>
-    </div>
-    <div class="fb-goals-col">
-      <div class="fb-label" style="color:var(--fb-ink2); margin-bottom:14px;">Known, not just served</div>
-      <ul class="fb-list-goals">
-        <li>Donor relationships are sustained &#8212; not just at campaign time</li>
-        <li>Funders hear back with human stories, not just impact reports</li>
-        <li>The fundraising team knows its donors as individuals</li>
-      </ul>
-    </div>
-    <div class="fb-goals-col">
-      <div class="fb-label" style="color:#007d8a; margin-bottom:14px;">Donor imperatives</div>
-      <ul class="fb-list-goals fb-list-goals--accent">
-        <li>Confidence in complexity &#8212; impact explained in plain terms, not charity-speak</li>
-        <li>Part of something bigger &#8212; funders back a movement, not just a service provider</li>
-        <li>Clear line of sight from gift to outcome &#8212; no abstracted statistics</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="fb-synthesis" style="background: var(--fb-teal);">
-    <div class="fb-synthesis-text" style="color:var(--fb-ink);">Donor standard: every funder understands exactly where their contribution goes &#8212; and feels genuinely proud to tell others they back Northcott.</div>
-  </div>
-
-</div>
-
-
-<!-- ████████████████████████████████████████████████████████████████████████████████
-     GOOD SERVICES VIEW
-████████████████████████████████████████████████████████████████████████████████ -->
-<div id="v-goodservices" class="view">
-
-  <div class="gs-intro">
-    <div class="fb-label" style="color:rgba(255,255,255,.3); margin-bottom:16px;">Foundation</div>
-    <div style="font-weight:700; font-size:clamp(1.4rem,3vw,2.2rem); line-height:1.1; letter-spacing:-0.02em; color:#fff; margin-bottom:14px;">The Good Services backbone</div>
-    <div class="fb-body-white" style="max-width:680px;">Lou Downe's 15 Good Services principles define what makes a service genuinely good &#8212; developed for the UK Government Digital Service, adopted widely in disability and public sector contexts. Each of Northcott's four brand experience principles maps to the most diagnostically powerful Good Services criteria for that dimension of experience.</div>
-  </div>
-
-  <div class="gs-grid">
-
-    <div class="gs-cell">
-      <div class="gs-cell-num">01</div>
-      <div class="gs-cell-label col-green">You lead, we support</div>
-      <div class="gs-cell-text">Be easy to find</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">02</div>
-      <div class="gs-cell-label col-orange">Confidence in complexity</div>
-      <div class="gs-cell-text">Clearly explain its purpose</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">03</div>
-      <div class="gs-cell-label col-green">You lead, we support</div>
-      <div class="gs-cell-text">Set and meet expectations</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">04</div>
-      <div class="gs-cell-label col-green">You lead, we support</div>
-      <div class="gs-cell-text">Be able to be used without assistance</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">05</div>
-      <div class="gs-cell-label col-orange">Confidence in complexity</div>
-      <div class="gs-cell-text">Require no prior knowledge to use</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">06</div>
-      <div class="gs-cell-label col-dpurple">Known, not just served</div>
-      <div class="gs-cell-text">Be agnostic of organisational boundaries</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">07</div>
-      <div class="gs-cell-label col-green">You lead, we support</div>
-      <div class="gs-cell-text">Require the minimum possible steps</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-label col-orange">Confidence in complexity</div>
-      <div class="gs-cell-text">Require the minimum possible steps</div>
-    </div>
-"gs-cell-label col-dpurple">Known, not just served</div>
-      <div class="gs-cell-text">Be consistent throughout</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">09</div>
-      <div class="gs-cell-label col-dpurple">Known, not just served</div>
-      <div class="gs-cell-text">Have no dead ends</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">10</div>
-      <div class="gs-cell-label col-orange">Confidence in complexity</div>
-      <div class="gs-cell-text">Be usable by everyone who needs it</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">11</div>
-      <div class="gs-cell-label col-orange">Confidence in complexity</div>
-      <div class="gs-cell-text">Encourage appropriate behaviours</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">12</div>
-      <div class="gs-cell-label col-teal">Part of something bigger</div>
-      <div class="gs-cell-text">Quickly respond to change</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">13</div>
-      <div class="gs-cell-label col-orange">Confidence in complexity</div>
-      <div class="gs-cell-text">Clearly explain why a decision was made</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">14</div>
-      <div class="gs-cell-label col-teal">Part of something bigger</div>
-      <div class="gs-cell-text">Make it easy to get human assistance</div>
-    </div>
-    <div class="gs-cell">
-      <div class="gs-cell-num">15</div>
-      <div class="gs-cell-label col-teal">Part of something bigger</div>
-      <div class="gs-cell-text">Require no more from users than necessary</div>
-    </div>
-
-  </div>
-
-  <div class="fb-shared" style="border-top: 3px solid var(--fb-red);">
-    <div class="fb-shared-text">Good Services reference: Lou Downe (2020). <em>Good Services: How to Design Services That Work. BIS Publishers.</em> &#8212; Applied here to Northcott's brand experience context.</div>
-  </div>
-
-</div>
-
-
-<script>
-function show(id, btn, col) {
-  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-  document.querySelectorAll('.fb-nav-btn').forEach(b => {
-    b.classList.remove('active');
-    b.style.removeProperty('--active-col');
-  });
-  document.getElementById('v-' + id).classList.add('active');
-  if (btn) {
-    btn.classList.add('active');
-    btn.style.setProperty('--active-col', col);
-  }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-</script>
-
-</body>
-</html>
+/* &#9472;&#9472; FORENAV SCRL
