@@ -3,245 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Northcott â Brand Experience Principles</title>
+<title>Northcott — Brand Experience Principles</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,7008display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:oper|wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap');
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   /* FB section colours */
-  --fb-red:      #E94250;
-  --fb-amber:    #E1A401;
-  --fb-orange:   #EE743A;
-  --fb-dpurple:  #3C017A;
-  --fb-purple:   #894A97;
-  --fb-teal:     #00B3C4;
-  --fb-green:    #00AC42;
-
-  /* Dark surfaces */
-  --fb-dark:     #282821;
-  --fb-darker:   #1c2b1e;
+  
+  
+  
+  
+  (�DarQ surfaces *
+  --fb-dark:      #282821;
+  --fb-darker:    #1c2b1e;
   --fb-ink:      #1a1a1a;
-  --fb-ink2:     #4a4a4a;
+  --fb-ink2:      #4a4a4a;
 
   /* Light surfaces */
-  --fb-white:    #FFFFFF;
+  --fb-white:   ##FFFFFF;
   --fb-offwhite: #F3EFEA;
-  --fb-lgrey:    #e8e6dc;
+  --fb-lgrey:     #e8e6dc;
 
   /* Typography */
   --fb-font: 'DM Sans', 'Arial', 'Helvetica Neue', sans-serif;
 
-  /* Spacing */
-  --sp-xs:  4px;
-  --sp-sm:  8px;
-  --sp-md:  16px;
-  --sp-lg:  32px;
-  --sp-xl:  48px;
-  --sp-2xl: 80px;
-
-  /* Principle section colours */
-  --p1: var(--fb-green);
-  --p2: var(--fb-dpurple);
-  --p3: var(--fb-orange);
-  --p4: var(--fb-teal);
-}
-
-html { font-size: 16px; }
-
-body {
-  font-family: var(--fb-font);
-  background: var(--fb-offwhite);
-  color: var(--fb-ink);
-  min-height: 100vh;
-}
-
-/* ââ STICKY NAV ââ */
-.fb-nav {
-  background: var(--fb-dark);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  align-items: stretch;
-  overflow-x: auto;
-  scrollbar-width: none;
-  border-bottom: 1px solid rgba(255,255,255,.05);
-}
-.fb-nav::-webkit-scrollbar { display: none; }
-
-.fb-nav-brand {
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,.35);
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  border-right: 1px solid rgba(255,255,255,.07);
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.fb-nav-btn {
-  background: none;
-  border: none;
-  color: rgba(255,255,255,.38);
-  font-family: var(--fb-font);
-  font-size: 9.5px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 14px 16px 12px;
-  cursor: pointer;
-  border-bottom: 2px solid transparent;
-  transition: all .15s;
-  white-space: nowrap;
-}
-.fb-nav-btn:hover { color: rgba(255,255,255,.78); }
-.fb-nav-btn.active { color: #fff; border-bottom-color: var(--active-col, #fff); }
-
-/* ââ VIEWS ââ */
-.view { display: none; }
-.view.active { display: block; }
-
-/* ââ FB HERO SPLIT ââ */
-.fb-hero {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  min-height: 280px;
-}
-
-.fb-hero-left {
-  padding: 36px 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  overflow: hidden;
-}
-
-.fb-hero-right {
-  background: var(--fb-dark);
-  padding: 36px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.fb-ghost-num {
-  font-family: var(--fb-font);
-  font-weight: 700;
-  font-size: clamp(5rem, 14vw, 11rem);
-  line-height: 1;
-  letter-spacing: -0.04em;
-  color: rgba(255,255,255,.08);
-  position: absolute;
-  bottom: -12px;
-  left: 12px;
-  pointer-events: none;
-  user-select: none;
-}
-.fb-ghost-num--dark { color: rgba(0,0,0,.08); }
-
-.fb-label {
-  font-family: var(--fb-font);
-  font-weight: 700;
-  font-size: 8.5px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.fb-display {
-  font-family: var(--fb-font);
-  font-weight: 700;
-  font-size: clamp(1.8rem, 5vw, 3.6rem);
-  line-height: 0.95;
-  letter-spacing: -0.025em;
-  color: #fff;
-}
-
-.fb-body { font-size: 12.5px; line-height: 1.5; color: var(--fb-ink2); }
-.fb-body-white { font-size: 13px; line-height: 1.55; color: rgba(255,255,255,.78); }
-.fb-descriptor { font-size: 12.5px; line-height: 1.45; color: rgba(255,255,255,.5); }
-.fb-headline { font-weight: 700; font-size: clamp(1.1rem, 2.5vw, 1.6rem); line-height: 1.1; color: var(--fb-ink); }
-
-.fb-quote { font-size: 15px; font-weight: 600; line-height: 1.35; color: var(--fb-white); margin-bottom: 6px; }
-.fb-quote-attr { font-size: 10px; color: rgba(255,255,255,.4); line-height: 1.3; }
-
-/* ââ DUAL-SOURCE TWOCOL ââ */
-.fb-dual-source { display: grid; grid-template-columns: 1fr 1fr; background: var(--fb-white); }
-.fb-source-col { padding: 28px; }
-.fb-source-col:first-child { border-right: 1px solid var(--fb-lgrey); }
-
-./* ââ TENSION ROW ââ */
-.fb-tension-row { display: grid; grid-template-columns: 1fr 1fr; }
-.fb-align-col { background: var(--fb-offwhite); padding: 24px 28px; }
-.fb-diverge-col { background: var(--fb-dark); padding: 24px 28px; }
-
-/* ââ GOALS GRID ââ */
-.fb-goals-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; border: 1px solid var(--fb-lgrey); background: var(--fb-white); }
-.fb-goals-col { padding: 20px 22px; border-right: 1px solid var(--fb-lgrey); }
-.fb-goals-col:last-child { border-right: none; }
-
-/* ââ SYNTHESIS BAND ââ */
-.fb-synthesis { padding: 28px 40px; }
-.fb-synthesis-text { font-size: 15px; font-weight: 600; line-height: 1.4; color: #fff; }
-
-/* ââ SHARED UNDERSTANDING ââ */
-.fb-shared { background: var(--fb-dark); padding: 20px 28px; }
-.fb-shared-text { font-size: 14.5px; font-weight: 600; line-height: 1.4; color: var(--fb-white); }
-.fb-shared-text em { font-style: normal; color: rgba(255,255,255,.5); font-weight: 400; }
-
-/* ââ TAG ROW ââ */
-.fb-tag-row { background: var(--fb-offwhite); padding: 14px 28px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; border-top: 1px solid var(--fb-lgrey); }
-.fb-tag { display: inline-block; border: 1.5px solid #ccc; padding: 3px 9px; font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fb-ink2); }
-
-/* ââ LISTS ââ */
-.fb-list-align { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-.fb-list-align li { font-size: 12px; line-height: 1.45; padding-left: 14px; position: relative; color: #3a3a3a; }
-.fb-list-align li::before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 1px; background: var(--fb-ink); }
-
-.fb-list-diverge { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-.fb-list-diverge li { font-size: 12px; line-height: 1.45; padding-left: 14px; position: relative; color: rgba(255,255,255,.75); }
-.fb-list-diverge li::before { content: ''; position: absolute; left: 0; top: 6px; width: 5px; height: 5px; border: 1.5px solid rgba(255,255,255,.35); }
-
-.fb-list-goals { list-style: none; display: flex; flex-direction: column; gap: 7px; }
-.fb-list-goals li { font-size: 12px; line-height: 1.45; padding-left: 13px; position: relative; color: var(--fb-ink2); }
-.fb-list-goals li::before { content: ''; position: absolute; left: 0; top: 6px; width: 4px; height: 4px; background: var(--fb-lgrey); }
-.fb-list-goals--accent li::before { background: var(--section-col); border: none; }
-
-/* ââ SECTION DIVIDER ââ */
-.fb-divider { height: 1px; background: var(--fb-lgrey); }
-.fb-divider--dark { background: rgba(255,255,255,.08); }
-
-/* ââ OVERVIEW GRID ââ */
-.overview-grid { display: grid; grid-template-columns: 1fr 1fr; background: var(--fb-white); }
-.overview-card {
-  padding: 36px 32px;
-  border-right: 1px solid var(--fb-lgrey);
-  border-bottom: 1px solid var(--fb-lgrey);
-  cursor: pointer;
-  transition: background .15s;
-  position: relative;
-  overflow: hidden;
-}
-.overview-card:nth-child(2n) { border-right: none; }
-.overview-card:nth-child(3),
-.overview-card:nth-child(4) { border-bottom: none; }
+  /* Spacing *
+verview-card:nth-child(4) { border-bottom: none; }
 .overview-card:hover { background: var(--fb-offwhite); }
 
 .ov-accent { width: 24px; height: 3px; margin-bottom: 20px; }
 .ov-num { font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px; }
 .ov-name { font-weight: 700; font-size: 1.5rem; line-height: 1.05; letter-spacing: -0.02em; color: var(--fb-ink); margin-bottom: 6px; }
 .ov-tag { font-size: 11px; color: var(--fb-ink2); margin-bottom: 18px; font-weight: 400; }
-.ov-body { font-size: 12.5px; line-height: 1.5; color: var(--fb-ink2); margin-bottom: 20px; }
+.cv-body { font-size: 12.5px; line-height: 1.5; color: var(--fb-ink2); margin-bottom: 20px; }
 .ov-gs { font-size: 10px; color: #999; line-height: 1.5; border-top: 1px solid var(--fb-lgrey); padding-top: 14px; }
 .ov-ghost { font-weight: 700; font-size: 7rem; line-height: 1; letter-spacing: -0.04em; color: rgba(0,0,0,.04); position: absolute; bottom: -10px; right: 10px; pointer-events: none; user-select: none; }
 
-/* ââ AUDIENCE SECTIONS ââ */
+/* ── AUDIENCE SECTIONS ── */
 .aud-header { display: flex; align-items: center; gap: 0; padding: 0; border-bottom: 1px solid var(--fb-lgrey); background: var(--fb-white); overflow-x: auto; }
 .aud-tab { background: none; border: none; border-bottom: 2px solid transparent; font-family: var(--fb-font); font-size: 9.5px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--fb-ink2); padding: 14px 18px 12px; cursor: pointer; white-space: nowrap; transition: all .15s; }
 .aud-tab:hover { color: var(--fb-ink); }
@@ -261,7 +61,7 @@ body {
 .pr-name { font-weight: 700; font-size: 1.1rem; letter-spacing: -0.015em; color: var(--fb-ink); }
 .pr-text { font-size: 12.5px; line-height: 1.55; color: var(--fb-ink2); max-width: 720px; }
 
-/* ââ GOOD SERVICES VIEW ââ */
+/* ── GOOD SERVICES VIEW ── */
 .gs-intro { background: var(--fb-dark); padding: 40px; }
 .gs-grid { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--fb-white); }
 .gs-cell { padding: 18px 20px; border-right: 1px solid var(--fb-lgrey); border-bottom: 1px solid var(--fb-lgrey); }
@@ -271,7 +71,7 @@ body {
 .gs-cell-label { font-size: 8.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 5px; }
 .gs-cell-text { font-size: 11.5px; line-height: 1.45; color: var(--fb-ink2); }
 
-/* ââ SECTION COLOUR MAP ââ */
+/* ── SECTION COLOUR MAP ── */
 .col-green  { color: #007a2f; }
 .col-dpurple { color: var(--fb-dpurple); }
 .col-orange { color: #b8521e; }
@@ -282,7 +82,7 @@ body {
 .bg-orange  { background: var(--fb-orange); }
 .bg-teal    { background: var(--fb-teal); }
 
-/* ââ ANIMATIONS ââ */
+/* ── ANIMATIONS ── */
 @keyframes fadeIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
 .view.active > * { animation: fadeIn .28s ease both; }
 .view.active > *:nth-child(2) { animation-delay:.04s; }
@@ -296,15 +96,15 @@ body {
   .fb-hero { grid-template-columns: 1fr; }
   .overview-grid { grid-template-columns: 1fr; }
   .fb-dual-source { grid-template-columns: 1fr; }
-   .fb-tension-row { grid-template-columns: 1fr; }
-   .fb-goals-grid { grid-template-columns: 1fr; }
+  .fb-tension-row { grid-template-columns: 1fr; }
+  .fb-goals-grid { grid-template-columns: 1fr; }
   .gs-grid { grid-template-columns: 1fr 1fr; }
 }
 </style>
 </head>
-|body">
+<body>
 
-<!-- ââââââ STICKY NAV ââââââ -->
+<!-- ══════ STICKY NAV ══════ -->
 <nav class="fb-nav">
   
   
@@ -390,405 +190,128 @@ body {
   
   
   
-(×(Ø±ÍÌôµ¹ØµÉ¹ù9½ÉÑ¡½ÑÐð½¥Øø(ñÕÑÑ½¸±ÍÌôµ¹ØµÑ¸Ñ¥ÙÍÑå±ô´µÑ¥Ùµ½°èÙÈ ´µµÉ¸¤½¹±¥¬ôÍ¡½Ü ½ÙÉÙ¥Ü°Ñ¡¥Ì°ÙÈ ´µµÉ¸¤¤ù=ÙÉÙ¥Üð½ÕÑÑ½¸ø(ñÕÑÑ½¸±ÍÌôµ¹ØµÑ¸½¹±¥¬ôÍ¡½Ü ÕÍÑ½µÉÌ°Ñ¡¥Ì°ÙÈ ´µµÉ¸¤¤ù
-ÕÍÑ½µÉÌð½ÕÑÑ½¸ø(ñÕÑÑ½¸±ÍÌôµ¹ØµÑ¸½¹±¥¬ôÍ¡½Ü ÍÑ°Ñ¡¥Ì°ÙÈ ´µµÁÕÉÁ±¤¤ùMÑð½ÕÑÑ½¸ø(((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((¢ bÆ'WGFöâ6Æ73Ò&f"ÖæbÖ'Fâ"öæ6Æ6³Ò'6÷rvv÷gBrÂF2Âwf"ÒÖf"Ö÷&ævRr#äv÷fW&æÖVçBf×²'FæW'3Âö'WGFöãà¢Æ'WGFöâ6Æ73Ò&f"ÖæbÖ'Fâ"öæ6Æ6³Ò'6÷rvgVæFW'2rÂF2Âwf"ÒÖf"×FVÂr#ägVæG&6ærf×²Föæ÷'3Âö'WGFöãà¢Æ'WGFöâ6Æ73Ò&f"ÖæbÖ'Fâ"öæ6Æ6³Ò'6÷rvvööG6W'f6W2rÂF2Âwf"ÒÖf"×&VBr#ävööB6W'f6W3Âö'WGFöãà£Âöæcà  ¢ò¢)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)YÕTQUÈQUÂ¸¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥dKO]YH[Ý\Y]ÈÛ\ÜÏHY]ÈXÝ]HKKH\ÈÜ]KO\KYY\ÊNÈ(]Û\ÜÏHZ\Ë[YÝ[OHXÚÙÜÝ[\KYY\ÊNÈ]]Û\ÜÏH[X[Ý[OHÛÛÜØJMKMKMKÍJNÈ[^\Y[ÙOÙ]Ù]]]Û\ÜÏHY\Ü^HÝ[OHÛ\Ú^NÛ[\
-K[K
-ËÜ[JNÈX\Ú[XÝÛNÈÝÈÙHÚÝÈ\]\H[YKÙ]]Û\ÜÏHY\ØÜ\ÜÜÛÝ[^\Y[ÙH[Ú\\ÏÙ]Ù]]Û\ÜÏHYÚÜÝ[[HÙ]Ù]]Û\ÜÏHZ\Ë\YÚ]Û\ÜÏH[X[Ý[OHÛÛÜØJMKMKMKÊNÈX\Ú[XÝÛNMÈÚH\ÈX]\ÏÙ]]Û\ÜÏH\][ÝH[HX\Ù]Ù
-ÍËXÝ]HÝY\ËY\[X][ÛØ[ÝÛÛYHÛHX]\\Ë]ÛÛY\ÈÛHZ][Ý\Ù]]Ý[OHZYÚMÈÙ]]Û\ÜÏHXÙK]Ú]HÝ\[]\Ø[[Ú\\ÈÛÝ\]\HÜÛÝ[\XÝ[Û8 %ÜÝ\ÝÛY\È[[Z[Y\ËÝYÛÝ\Y[\\Ë[ÛÜËH[Ú\\È\HÛÛÝ[H^\ÜÚ[ÛÚYÈH]YY[ÙKÙ]]Ý[OHZYÚÈÙ]]Û\ÜÏH\][ÝKX][ÜYYHÝHÝÛIÜÈÛÛÙÙ\XÙ\È[Y]ÛÜÈ	[\ÈÜÛÝÝ]YÚXÈ\XÝ[ÛOÙ]Ù](]Û\ÜÏHÝ\Y]ËYÜY]Û\ÜÏHÝ\Y]ËXØ\ÛÛXÚÏHÚÝÊ	ØÝ\ÝÛY\ÉËØÝ[Y[]Y\TÙ[XÝÜ[
-	Ë[]XÊVÌWK	Ý\KYYÜY[IÊH]Û\ÜÏHÝXXØÙ[ËYÜY[Ù]]Û\ÜÏHÝ[[HÛÛYÜY[[Ú\HOÙ]]Û\ÜÏHÝ[[YH[ÝHXYÙHÝ\ÜÙ]]Û\ÜÏHÝ]YÈÚÚXÙH[ÛÛÛXYHX[Ù]]Û\ÜÏHÝXÙH]\H[\XÝ[Û[ÈHÝY\[ÈÚY[XÚÈÈH\ÛÛ][ÜÝYXÝËÜÛÝ^\ÝÈÈ[XH8 %ÝÈXÚYKX[YÙKÜÛÝÈ]\Ù][Û\ÜÏH[\ÝX[YÛOÝ\Ú]ÛØ[ËÝÙ\XÙHY[\ÏÛOOÙ\Ü[ÛÈ]\[\ØÜ\[ÛÏÛOOXZÙH]X\ÞHÈÚ]HYYXÚÈ[Ú[ÙHÛÝ\ÙOÛOÝ[]Û\ÜÏHÝYÜÈÝ[OHX\Ú[]ÜMÈÛÛÙÙ\XÙ\Î\]Z\\ÈÈ[ÜÛÝÛYÙH0­È[X\È\Ù\ÈÈÛÛ\]H][ZYYÙ]]Û\ÜÏHÝYÚÜÝOÙ]Ù]]Û\ÜÏHÝ\Y]ËXØ\ÛÛXÚÏHÚÝÊ	ÜÝYËØÝ[Y[]Y\TÙ[XÝÜ[
-	Ë[]XÊVÌK	Ý\KYY\JIÊH]Û\ÜÏHÝXXØÙ[ËY\HÙ]]Û\ÜÏHÝ[[HÛÛY\H[Ú\HÙ]]Û\ÜÏHÝ[[YHÛÝÛÝ\ÝÙ\YÙ]]Û\ÜÏHÝ]YÈÛÛ[Z]H]Z[ÈX[\ÝÙ]]Û\ÜÏHÝXÙH[ÜHÛÝØ[ÈHHØ\ÙH[X\ÜÛÝX\ÈÞX[HHX][È]\H\ÛÛ\ÈHÚÛH8 %XÜÜÜÈ[YKÙ\XÙ\Ë[[Ú][ÛËÙ][Û\ÜÏH[\ÝX[YÛOÈ][[ÈHÝÜH8 %ÛÛ[Z]HXÜÜÜÈÙ\XÙ\ÏÛOOØXÝ]HÛÛ[][XØ][ÛYÜH[ÜH\ÚÏÛOOØ\KÛÛÚ\Ý[[ÙÈ]ÙY[X[\ÏÛOÝ[]Û\ÜÏHÝYÜÈÝ[OHX\Ú[]ÜMÈÛÛÙÙ\XÙ\ÎÛÛÚ\Ý[ÝYÚÝ]0­ÈÛÜÜÈ[HØ^H]\È[Z[X\Ù]]Û\ÜÏHÝYÚÜÝÙ]Ù]]Û\ÜÏHÝ\Y]ËXØ\ÛÛXÚÏHÚÝÊ	ÙÛÝ	ËØÝ[Y[]Y\TÙ[XÝÜ[
-	Ë[]XÊVÌ×K	Ý\KY[Ü[ÙJIÊH]Û\ÜÏHÝXXØÙ[Ë[Ü[ÙHÙ]]Û\ÜÏHÝ[[HÛÛ[Ü[ÙH[Ú\HÏÙ]]Û\ÜÏHÝ[[YHÛÛY[ÙO[ÛÛ\^]OÙ]]Û\ÜÏHÝ]YÈ^\Û\]KÝ^\\ÛÛÙ]]Û\ÜÏHÝXÙHHTÈ\ÈÙ[Z[[H\ÜÛÝ	ÜÈØ\ÈÈXZÙH[ÜHY[Ø\XH8 %ÝÜ]Y[ÜZ[È[YÙ][Û\ÜÏH[\ÝX[YÛOZ[[ÝXYÙH]]\HÝYÙK]\HÚ[[ÛOOÛÛ[]Z[ÈÛÝÛYÙKÝ\[[ÞOÛOOÝYÚÈÝZYHÚ]^\\ÙH[Ø\]ÛOÝ[]Û\ÜÏHÝYÜÈÝ[OHX\Ú[]ÜMÈÛÛÙÙ\XÙ\ÎÛX\H^Z[ÈÚHHXÚ\Ú[ÛØ\ÈXYH0­È\È[XHÙ]]Û\ÜÏHÝYÚÜÝÏÙ]Ù]]Û\ÜÏHÝ\Y]ËXØ\ÛÛXÚÏHÚÝÊ	Ù[\ÉËØÝ[Y[]Y\TÙ[XÝÜ[
-	Ë[]XÊVÍK	Ý\KY]X[
-IÊH]Û\ÜÏHÝXXØÙ[Ë]X[Ù]]Û\ÜÏHÝ[[HÛÛ]X[[Ú\H
-Ù]]Û\ÜÏHÝ[[YH\ÙÛÛY][ÏYÙÙ\Ù]]Û\ÜÏHÝ]YÈ[Û\Ú[Û\ÈXÝ[ÛÝ\Ü\][ÛÙ]]Û\ÜÏHÝXÙHÜÛÝ	ÜÈ\ÜÙH\ÈH[ÜH[Û\Ú]HÛØÚY]H8 %[[]\H[\XÝ[ÛÝ\Ý[Ý[ÙY[ÜHX]HÛÝÚ[È^HX]\^[ÛH[ØXÝ[ÛÙ][Û\ÜÏH[\ÝX[YÛOÙ[X]HÚ]X]\ÈÈ[ÜKÝ\ÝÝ]]ÏÛOOÛÛ[][]H\Ù[ÙH]ÜX]\È[ÛÚ[ÏÛOOYØØ]H\ÚXKÝ\Ý[\[OÛOÝ[]Û\ÜÏHÝYÜÈÝ[OHX\Ú[]ÜMÈÛÛÙÙ\XÙ\Î[ÛÝ\YÙ\È\ÜX]HZ][Ý\È0­È\ÈÝÛÈ\ÝÈ[ØÛÜHÙ]]Û\ÜÏHÝYÚÜÝ
-Ù]Ù]KKHÚ\Y[\Ý[[ÈÛÜÙ\KO]Û\ÜÏH\Ú\YÝ[OHÜ\]ÜÜÛÛY\KYYÜY[NÈ]Û\ÜÏH\Ú\Y]^\ÙH\HÝ[Y\ÈÛHØ[[O^H\HÝ[\ÈÜZ][Ý\8 %HÚ\Y[ÝXYÙHÜÝÈ]\H\ÛÛ]ÜÛÝÚÝÜÈ\]\H^KÙ[OÙ]Ù]Ù]KKH8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥dÕTÕÓQTÈQUÂ¸¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥d8¥dKO]YHXÝ\ÝÛY\ÈÛ\ÜÏHY]È]Û\ÜÏHZ\È]Û\ÜÏHZ\Ë[YÝ[OHXÚÙÜÝ[\KYYÜY[NÈ]]Û\ÜÏH[X[Ý[OHÛÛÜØJÍJNÈ]YY[ÙOÙ]Ù]]]Û\ÜÏHY\Ü^HÝ[OHÛÛÜÙÈÛ\Ú^NÛ[\
-K[KË]Ë[JNÈÝ\ÝÛY\Ï[\È[Z[Y\ÏÙ]Ù]]Û\ÜÏHYÚÜÝ[[HYÚÜÝ[[KKY\ÈÏÙ]Ù]]Û\ÜÏHZ\Ë\YÚ]Û\ÜÏH[X[Ý[OHÛÛÜØJMKMKMKÊNÈX\Ú[XÝÛNMÈÚÈ\È\ÈÜÙ]]Û\ÜÏH\][ÝH[ÜHÚ]\ØX[]KZ\Ø\\Ë[[Z[Y\È]YØ][ÈHTÈ[ÜÛÝ	ÜÈÙ\XÙ\ËÙ]]Ý[OHZYÚMÈÙ]]Û\ÜÏHXÙK]Ú]HÛXÚÈ[HØ\[HÝ\Y]ÈÈ[\È[]YY[ÙHY]ËHÝ\[Ú\\È[XZ[ÛÛÝ[8 %Z\^\ÜÚ[ÛÚYÈÈYXÝÚ]XXÚ]YY[ÙHYYÈÛHÜÛÝâbû     </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+1</div>
     </div>
 
-    <div class="fb-dual-source">
-      <div class="fb-source-col">
-        <div class="fb-label col-green" style="margin-bottom:14px;">Principle 01 â You lead, we support</div>
-        <div class="fb-body" style="margin-bottom:12px;">Every initial conversation starts with "What does a good life look like for you?" â not "What services do you need?" Service options are presented as choices, with trade-offs explained plainly.</div>
-        <div class="fb-body">Customers can change direction without bureaucratic friction. The system bends to the person, not the other way around.</div>
-      </div>
-      <div class="fb-source-col">
-        <div class="fb-label col-dpurple" style="margin-bottom:14px;">Principle 02 â Known, not just served</div>
-        <div class="fb-body" style="margin-bottom:12px;">Moving between Northcott services â housing, community, clinical â feels seamless. The new team already knows the person. No one ever has to repeat their story.</div>
-        <div class="fb-body">Check-ins happen before situations become problems. Milestone moments are noticed and celebrated.</div>
-      </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-( <div class="fb-tension-row">       <div class="fb-align-col">
-        <div class="fb-label" style="color:var(--fb-ink2); margin-bottom:14px;">Principle 03 â Confidence in complexity</div>
-          <ul class="fb-list-align">
-            <li>The NDIS journey feels less overwhelming with Northcott as a guide</li>
-            <li>Information is in plain language â for no jargon, no assumptions</li>
-            <li>Content helps families understand their options before they even ask</li>
-            <li>Every decision is explained â not just enacted</li>
-          </ul>
-        </div>
-        <div class="fb-diverge-col">
-          <div class="fb-label" style="color:rgba(255,255,255,.35); margin-bottom:14px;">Principle 04 â Part of something bigger</div>
-          <ul class="fb-list-diverge">
-            <li>People feel connected to a community, not just receiving a service</li>
-            <li>Northcott's advocacy work is visible and felt at every level</li>
-            <li>Customers are invited into that story â their lived experience shapes how Northcott advocates for systemic change</li>
-          </ul>
-        </div>
-      </div>
-      <div class="fb-synthesis" style="background: var(--fb-green);">
-        <div class="fb-synthesis-text" style="color: var(--fb-ink);">Customer experience standard: people leave every Northcott interaction feeling more capable, more connected, and more in control than when they arrived.</div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-( </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-( </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-( <script>
-function show(id, btn, col) {
-  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-  document.querySelectorAll('.fb-nav-btn').forEach(b => {
-    b.classList.remove('active');
-    b.style.removeProperty('--active-col');
-  });
-  document.getElementById('v-' + id).classList.add('active');
-  if (btn) {
-    btn.classList.add('active');
-    btn.style.setProperty('--active-col', col);
-  }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-</script>
-	
-</body>
-/¾<(/html>
+    <div class="overview-card" onclick="show('staff', document.querySelectorAll('.fb-nav-btn')[2], 'var(--fb-dpurple)')">
+      <div class="ov-accent bg-dpurple"></div>
+      <div class="ov-num col-dpurple">Principle 02</div>
+      <div class="ov-name">Known,<br>not just served</div>
+      <div class="ov-tag">Continuity that builds real trust</div>
+      <div class="ov-body">People don't want to be a case number. Northcott earns loyalty by treating every person as a whole — across time, services, and transitions.</div>
+      <ul class="fb-list-align">
+        <li>No retelling the story — continuity across services</li>
+        <li>Proactive communication before people ask</li>
+        <li>Warm, consistent handoffs between teams</li>
+      </ul>
+      <div class="ov-gs" style="margin-top:16px;">Good Services: "Consistent throughout" · "Works in a way that is familiar"</div>
+      <div class="ov-ghost">02</div>
+    </div>
+
+    <div class="overview-card" onclick="show('govt', document.querySelectorAll('.fb-nav-btn')[3], 'var(--fb-orange)')">
+      <div class="ov-accent bg-orange"></div>
+      <div class="ov-num col-orange">Principle 03</div>
+      <div class="ov-name">Confidence<br>in complexity</div>
+      <div class="ov-tag">Expert clarity, not expert jargon</div>
+      <div class="ov-body">The NDIS is genuinely hard. Northcott's job is to make people feel capable — not grateful for being handled.</div>
+      <ul class="fb-list-align">
+        <li>Plain language at every stage, every channel</li>
+        <li>Content that builds knowledge, not dependency</li>
+        <li>Staff who guide with expertise and warmth</li>
+      </ul>
+      <div class="ov-gs" style="margin-top:16px;">Good Services: "Clearly explains why a decision was made" · "Is findable"</div>
+      <div class="ov-ghost">03</div>
+    </div>
+
+    <div class="overview-card" onclick="show('funders', document.querySelectorAll('.fb-nav-btn')[4], 'var(--fb-teal)')">
+      <div class="ov-accent bg-teal"></div>
+      <div class="ov-num col-teal">Principle 04</div>
+      <div class="ov-name">Part of something<br>bigger</div>
+      <div class="ov-tag">Inclusion as action, not aspiration</div>
+      <div class="ov-body">Northcott's purpose is a more inclusive society — felt in every interaction, not just announced. People leave knowing they matter beyond the transaction.</div>
+      <ul class="fb-list-align">
+        <li>Celebrate what matters to people, not just outputs</li>
+        <li>Community presence that creates belonging</li>
+        <li>Advocate visibly, not just internally</li>
+      </ul>
+      <div class="ov-gs" style="margin-top:16px;">Good Services: "Encourages appropriate behaviours" · "Is not too narrow in scope"</div>
+      <div class="ov-ghost">04</div>
+    </div>
+
+  </div>
+
+  <!-- Shared understanding closer -->
+  <div class="fb-shared" style="border-top: 3px solid var(--fb-green);">
+    <div class="fb-shared-text">These are not values on a wall. <em>They are standards for behaviour — a shared language for how every person at Northcott shows up, every day.</em></div>
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════════════(�����
+UMQ=5IL�Y%\+�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�VC�V@����(�؁���ص���ѽ���̈�������٥�܈�((���؁�����􉙈���ɼ��(�����؁�����􉙈���ɼ����Ј���屔􉉅���ɽչ��مȠ������ɕ�����(���������(���������؁�����􉙈����������屔􉍽����ɝ����(������Ԥ��Ց�����𽑥��(������𽑥��(���������(���������؁�����􉙈�������䈁��屔􉍽���荙��쁙��еͥ�鍱����ĸ�ɕ��̸��ܰȸ�ɕ����
+��ѽ�����������쁙�������𽑥��(������𽑥��(�������؁�����􉙈�����е�մ��������е�մ����ɬ��𽑥��(����𽑥��(�����؁�����􉙈���ɼ�ɥ��Ј�(�������؁�����􉙈����������屔􉍽����ɝ�����԰��԰��԰�̤쁵�ɝ������ѽ��������]���ѡ�́�́���𽑥��(�������؁�����􉙈��սє��A������ݥѠ���ͅ�����䰁ѡ��ȁ��ɕ�̰������������́��٥��ѥ���ѡ��9%L�����9��ѡ���Н͕́�٥��̸𽑥��(�������؁��屔􉡕�����������𽑥��(�������؁�����􉙈�����ݡ�є��
+�������䁍�ɐ����ѡ���ٕ�٥�ܹѼ��յ��Ѽ�����Ց������٥�ܸ�Q������ȁ�ɥ������́ɕ���������х�Ѓ�P�ѡ��ȢW�&W76���6��gG2F�&Vf�V7Bv�BV6�VF�V�6R�VVG2g&����'F�6�GB���F�c���F�c���F�cࠢ�F�b6�73�&f"�GV��6�W&6R#��F�b6�73�&f"�6�W&6R�6��#��F�b6�73�&f"��&V�6���w&VV�"7G��S�&�&v���&�GF�ӣG��#�&��6��R(	B��R�VB�vR7W�'C��F�c��F�b6�73�&f"�&�G�"7G��S�&�&v���&�GF�ӣ'��#�WfW'���F��6��fW'6F���7F'G2v�F�%v�BF�W2v��BƖfR����Ɩ�Rf�"��S�"(	B��B%v�B6W'f�6W2F���R�VVC�"6W'f�6R�F���2&R&W6V�FVB26���6W2�v�F�G&FR��fg2W����VB������F�c��F�b6�73�&f"�&�G�#�7W7F��W'26�6��vRF�&V7F���v�F��WB'W&VV7&F�2g&�7F����F�R7�7FV�&V�G2F�F�RW'6�����BF�R�F�W"v�&�V�B���F�c���F�c��F�b6�73�&f"�6�W&6R�6��#��F�b6�73�&f"��&V�6���GW'�R"7G��S�&�&v���&�GF�ӣG��#�&��6��R"(	B���v����B�W7B6W'fVC��F�c��F�b6�73�&f"�&�G�"7G��S�&�&v���&�GF�ӣ'��#���f��r&WGvVV���'F�6�GB6W'f�6W2(	B��W6��r�6���V�G��6Ɩ�6�(	BfVV�26V��W72�F�R�WrFV��&VG����w2F�RW'6�������RWfW"�2F�&WVBF�V�"7F�'����F�c��F�b6�73�&f"�&�G�#�6�V6�֖�2�V�&Vf�&R6�GVF���2&V6��R&�&�V�2�֖�W7F��R���V�G2&R��F�6VB�B6V�V'&FVB���F�c���F�c���F�cࠢ�F�b6�73�&f"�FV�6����&�r#��F�b6�73�&f"�Ɩv��6��#��F�b6�73�&f"��&V�"7G��S�&6���#�f"���f"֖�"���&v���&�GF�ӣG��#�&��6��R2(	B6��f�FV�6R��6���W��G���F�c��V�6�73�&f"�Ɨ7B�Ɩv�#��Ɠ�F�R�D�2��W&�W�fVV�2�W72�fW'v�V�֖�rv�F���'F�6�GB2wV�FS��Ɠ��Ɠ��f�&�F����2�������wVvR(	B���&v�����77V�F���3��Ɠ��Ɠ�6��FV�B�V�2f֖ƖW2V�FW'7F�BF�V�"�F���2&Vf�&RF�W�WfV�6���Ɠ��Ɠ�WfW'�FV6�6����2W����VB(	B��B�W7BV�7FVC��Ɠ���V����F�c��F�b6�73�&f"�F�fW&vR�6��#��F�b6�73�&f"��&V�"7G��S�&6���#�&v&�#SR�#SR�#SR��3R���&v���&�GF�ӣG��#�&��6��RB(	B'B�b6��WF���r&�vvW#��F�c��V�6�73�&f"�Ɨ7B�F�fW&vR#��Ɠ�V��RfVV�6���V7FVBF�6���V�G����B�W7B&V6V�f��r6W'f�6S��Ɠ��Ɠ���'F�6�GBw2Gf�67�v�&��2f�6�&�R�BfV�BBWfW'��WfV���Ɠ��Ɠ�7W7F��W'2&R��f�FVB��F�F�B7F�'�(	BF�V�"ƗfVBW�W&�V�6R6�W2��r��'F�6�GBGf�6FW2f�"7�7FV֖26��vS��Ɠ���V����F�c���F�cࠢ�F�b6�73�&f"�7��F�W6�2"7G��S�&&6�w&�V�C�f"���f"�w&VV⓲#��F�b6�73�&f"�7��F�W6�2�FW�B"7G��S�&6���#�f"���f"֖沓�#�7W7F��W"W�W&�V�6R7F�F&C�V��R�VfRWfW'���'F�6�GB��FW&7F���fVVƖ�r��&R6&�R���&R6���V7FVB��B��&R��6��G&��F��v�V�F�W�'&�fVB���F�c���F�cࠣ��F�cࠠ����)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y)Y��Q���QU�\��H���Z\�ȏ��]��\��H���Z\��[Y���[OH��X��ܛ�[���\�KY��Y\�JNȏ��]���]��\��H���[X�[��[OH���܎��ؘJ�MK�MK�MK��JNȏ�]YY[��O�]����]���]���]��\��H���Y\�^H��[OH��۝\�^�N��[\
+K��[Kˍ]������[JNȏ��Y���]���]��\��H���Y\�ܚ\܈��[OH�X\��[�]���ȏ��\ܝ�ܚ�\��\�\\���\��X�H��ܙ[�]ܜ�[��ܜܘ]HX[\��]����]���]��\��H���Y���[�[H����]����]���]��\��H���Z\��\�Y����]��\��H���[X�[��[OH���܎��ؘJ�MK�MK�MK��N�X\��[�X���N�M�ȏ��]]�[��\�����Z�O�]���]��\��H���\][�H��\�H�[��\\�\�HH�[�\�و�Z]�[�\����H�[Y\��][Y[�ۈH�[8�%HZ[H�\�][����K��]���]��[OH�ZY��Mȏ��]���]��\��H���X��K]�]H��ۙH�ܝ��YX[��]�\�H�Y��Y[X�\�8�%�]\���۝[�H܈�ܜܘ]H8�%[�\��[����Z\���H�ۛ�X���H�[YH[��\�[ۈZ\��[ۋ���[�\��Z]�[�\���Z]�[�\�\��[\�K��]����]����]����]��\��H���Y��[�YܚY��[OH�K\�X�[ۋX����\�KY��Y\�JH���]��\��H���Y��[�X�����]��\��H���[X�[��[OH���܎��\�KY��Z[�̊N�X\��[�X���N�Mȏ�[�HXY�H�\ܝ�]���[�\��H���[\�Y��[ȏ��O�[\��\�Y�\�H�ٙ\��[ۘ[�Y�[Y[�8�%���\����\��Y����\���O��O��ܚ�Xܛ���X[\���]�H�\��Y\���X[��X�K]�[��[�]YX[��[�[�\��[�Y�\��[�O��O�H�\��Y\�����[\�H�ܝ�\���H�\��X�H�]Y�ܞO�O���[���]���]��\��H���Y��[�X�����]��\��H���[X�[��[OH���܎��\�KY��Z[�̊N�X\��[�X���N�Mȏ�ۛ�ۋ���\��\��Y�]���[�\��H���[\�Y��[ȏ��O��۝[�Z]Hو�[][ۜ�\\�H]X[]H�[�\���H�X�K]�Z]�O�O��O�[�ٙ���]�Y[�X[\�\�H�\�H[���YY�Y8�%�۝^�]�[��]H\��ۏ�O��O�ۛ��H\��ۉ��\�ܞH�Y�ܙHH�۝�\��][ۋ��\�[��]�O���[���]���]��\��H���Y��[�X�����]��\��H���[X�[��[OH���܎��\�KY��Y\�JN�X\��[�X���N�Mȏ���[�[\\�]]�\��]���[�\��H���[\�Y��[���[\�Y��[�KXX��[����O��ۙ�Y[��H[���\^]H8�%�Y��\�H[��\�Y[��۝[�[�\�K�]Hۛ��Y�H��H�[�Z[�H^\���O��O�\�و��Y][���Y��\�8�%�YH[�H�ܚ���Y\����H[�\��[�[��[\X����\���\][��\����O��O�ۙH�ܝ���[\�H\�H]�Y�\��[ۈو�[��\H
+�O���[���]����]����]��\��H���][��[ۋ\��ȏ��]��\��H���X[YۋX�����]��\��H���[X�[��[OH���܎��\�KY��Z[�̊N�X\��[�X���N�Mȏ��]�������Z�O�]���[�\��H���[\�X[Yۈ���O��Y���Y[�ۛ�X�Y��ܝ��	��\���H8�%���\�Z\�\��\��O��O�XY\��[�X[\�[��[�HX��]�[Y\�[�]�\�Y^H�ܚ��O��O��ܚY\�وܙX]X[]�ܚ�[��\��Y\�[\X�\�H�\�Y[��[X��]Y�O��O��Z[�[��	�[�[�\��[��[\��Z[��ܘ�H[��\��[��\\��ۜ�\�[�O�O���[���]���]��\��H���Y]�\��KX�����]��\��H���[X�[��[OH���܎��ؘJ�MK�MK�MK��JN�X\��[�X���N�Mȏ��]��XZ��H^\�Y[��O�]���[�\��H���[\�Y]�\��H���O�[�ٙ���]�]�۝^8�%�\��Y\���\X]Z\��ܞO�O��O��\��X�KY�\��[��[��]ݙ\��Y\��\��Y\���[��O��O��\��ۈ[����\��[��XY�H[��\��Y\�Y�X�[����[][�X�][ۏ�O��O�X[\��\�][��[�\��][ۈ�]\�[�\�ۙH�ܝ���O���[���]��������������������������������������������������������������������������������������\��\�Y��[OH��X��ܛ�[���\�KY��Y\��Nȏ���������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������\��\�Y����]��\��H���[X�[��[OH���܎��ؘJ�MK�MK�MK��N�X\��[�X���N�M�ȏ��ݝ�[N��Y�X�H�ٙ\��Y[��\���]Y�X��ۜ�\�[�ܙYX�H�]���]��\��H���\][�H���ܝ���[�Y���]HܙYX�H�X�]\�H]\��[��H�ܚ�8�%���\�[�[��X��]]��]���]��[OH�ZY��Mȏ��]���]��\��H���X��K]�]H���ݙ\��Y[�[�XZ���Y\��YY��\�]�ܝ��	��]�Y[��H�Y�X���X[�\��Y\�^\�Y[��J�x�%��Y��^�Y�Z[\ˈ�[][ۜ�\�\�H�\�Z[�Y���[��X�[ۘ[8�%�ܝ��\���\�ۜ�\�[�K���\�]�۝�X��[�]�[[YK��]����]���������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������
